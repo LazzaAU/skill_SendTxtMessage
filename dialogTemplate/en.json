@@ -24,6 +24,36 @@
 					"synonyms": []
 				}
 			]
+		},
+		{
+			"name": "telegramMessage",
+			"matchingStrictness": null,
+			"automaticallyExtensible": true,
+			"useSynonyms": true,
+			"values": [
+				{
+					"value": "telegram",
+					"synonyms": [
+						""
+					]
+				}
+			]
+		},
+		{
+			"name": "textMessage",
+			"matchingStrictness": null,
+			"automaticallyExtensible": true,
+			"useSynonyms": true,
+			"values": [
+				{
+					"value": "text",
+					"synonyms": [
+						"s m s",
+						"sms",
+						"txt"
+					]
+				}
+			]
 		}
 	],
 	"intents": [
@@ -50,6 +80,37 @@
 					"name": "helpNeeded",
 					"required": false,
 					"type": "helpNeeded",
+					"missingQuestion": ""
+				}
+			]
+		},
+		{
+			"name": "SendTxt",
+			"enabledByDefault": true,
+			"utterances": [
+				"Send a {text:=>textMessage} message",
+				"send a {telegram:=>telegramMessage}",
+				"send a {telegram:=>telegramMessage} to {mary:=>Alice/Name}",
+				"send a {text:=>textMessage} to {Nancy:=>Alice/Name}",
+				"send a {susan:=>Alice/Name} a {telegram:=>telegramMessage}"
+			],
+			"slots": [
+				{
+					"name": "telegramMessage",
+					"required": false,
+					"type": "telegramMessage",
+					"missingQuestion": ""
+				},
+				{
+				"name": "textMessage",
+				"required": false,
+				"type": "textMessage",
+				"missingQuestion": ""
+				},
+				{
+					"name": "Alice/Name",
+					"required": false,
+					"type": "Alice/Name",
 					"missingQuestion": ""
 				}
 			]

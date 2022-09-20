@@ -1,16 +1,44 @@
 {
-	"emergencyContact": {
-		"defaultValue": "",
-		"dataType"    : "string",
-		"isSensitive" : false,
-		"description" : "A comma separated list of username/userid combo set as your emergency contact. Example: sue/12345678, bob/87654321",
-		"category"    : "system"
-	},
 	"confirmEmergencyCall": {
 		"defaultValue": true,
 		"dataType"    : "boolean",
 		"isSensitive" : false,
-		"description" : "Asks for confirmation before sending a emergency message",
-		"category"    : "system"
+		"description" : "Asks for confirmation before sending a emergency message"
+	},
+	"alicelocationId": {
+		"defaultValue": "Mikes House",
+		"dataType"    : "string",
+		"isSensitive" : false,
+		"description" : "The default house/location name to use to help id the sender in a emergency call",
+		"onUpdate": "updateDatabaseDetails"
+	},
+	"smsSenderDetails": {
+		"defaultValue": "",
+		"dataType"    : "string",
+		"isSensitive" : false,
+		"description" : "Your details. format= FirstName/email/emailPassword - Example Larry/larry@email.com/123456,Mary/mary@gmail.com/987654",
+		"onUpdate": "updateDatabaseDetails"
+	},
+	"smsRecipientDetails": {
+		"defaultValue": "",
+		"dataType"    : "string",
+		"isSensitive" : false,
+		"description" : "The recipient details in format: FirstName/PhoneNumber/isEmergencyContact/smsGateway - Example larry/08001234/yes/@txt.att.net, jesus/180098765/no/@vtext.com",
+		"onUpdate": "updateDatabaseDetails"
+	},
+	"telegramRecipientDetails": {
+		"defaultValue": "",
+		"dataType"    : "string",
+		"isSensitive" : false,
+		"description" : "The recipient details in format: YourFirstName/TheirFirsName/TheirChatId/isEmergencyContact - Example larry/Wife/12345678/yes, larry/Mary/987654/no",
+		"onUpdate": "updateDatabaseDetails"
+	},
+	"xTestMode": {
+		"defaultValue": false,
+		"dataType"    : "boolean",
+		"isSensitive" : false,
+		"description" : "Enable to test functionailty without sendng messages",
+		"onUpdate": "updateDatabaseDetails"
 	}
+
 }

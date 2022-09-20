@@ -1,20 +1,259 @@
 {
-	"sentEmergencyMessage": [
-		"Stay with me, Help is hopefully on it's way. I have sent a message to your emergency contacts",
-		"I have notified your emergency contact list",
-		"Message has been sent to your emergency contacts, Stay safe until they turn up"
-	],
-	"notSendingMessage": [
-		"ok, I've cancelled sending a message",
-		"I have not sent a message to your emergency contacts",
-		"Cancelled sending a message to your contacts. Glad your safe"
-	],
-	"helpMessage": [
-		"Hi {0}, Please visit {1} immediately, they have requested help and may be hurt",
-		"ATTENTION {0}. {1} has had a accident at home and is requesting immediate help.",
-		"{0} - {1} has requested immediate help, something has happened at home and they need assistance NOW"
-	],
-	"confirmEmergencyHelp": [
-		"Do you want me to send your emergency contacts a help message ?"
-	]
+    "askToSendEmergencyBroadcast": {
+        "default": [
+            "Do you want to send emergency broadcast ?",
+            "Should i send out a emergency alert to your contacts ?"
+        ],
+        "short": [
+            "send a alert ?"
+        ]
+    },
+    "cantLocateSMSContact": {
+        "default": [
+            "Couldn't locate any SMS contact called {0}",
+            "I couldn't find any SMS contact called {0}"
+        ],
+        "short": [
+            "no one called {0}"
+        ]
+    },
+    "couldntFindContact": {
+        "default": [
+            "Sorry but couldn't find a Telegram contact called {0}",
+            "You don't seem to have a contact called {0}"
+        ],
+        "short": [
+            "no one called {0}"
+        ]
+    },
+    "emergencyIfNoSenderName": {
+        "default": [
+            "Someone at {0} has requested help, please follow up immediately"
+        ]
+    },
+    "emergencyIfSenderName": {
+        "default": [
+            "{0} has requested help, please follow up immediately"
+        ]
+    },
+    "emergencyMessageSent": {
+        "default": [
+            "I've just sent the message to {0}",
+            "{0} just got sent a emergency message"
+        ],
+        "short": [
+            "{0} people sent"
+        ]
+    },
+    "failedToSendTelegram": {
+        "default": [
+            "Oops. Something went wrong and that message didn't send",
+            "hmmm, message failed to send. Please check my logs "
+        ],
+        "short": [
+            "failed"
+        ]
+    },
+    "fillInSenderDetails": {
+        "default": [
+            "You need to fill in Sender details in the skill settings. Aborting",
+            "I require Sender details to be able to send a message"
+        ],
+        "short": [
+            "add sender details"
+        ]
+    },
+    "justSentEmergencyTelegram": {
+        "default": [
+            "Just sent an emergency telegram message to {0} contacts",
+            "{0} telegram contacts just recieved your message"
+        ],
+        "short": [
+            "{0} people contacted"
+        ]
+    },
+    "noEmergencyContacts": {
+        "default": [
+            "You have no Emergency contacts and have not set up Sender details. I'm unable to assist further sorry"
+        ],
+        "short": [
+            ""
+        ]
+    },
+    "noRecipientNameSpecified": {
+        "default": [
+            "Failed, please try again and say a name like, send a telegram to Mary",
+            "I couldn't make sense of the contacts name. Did you specifiy one ?"
+        ],
+        "short": [
+            "no name provided"
+        ]
+    },
+    "noSMSContactFound": {
+        "default": [
+            "Please try again but say the recipients name. example. send a text to Barry",
+            "Please specifiy a SMS contact. Like send a text to David. I'm not good with nicknames so use a real name"
+        ],
+        "short": [
+            "Contact name not found"
+        ]
+    },
+    "notSendingMessage": {
+        "default": [
+            "Ok not sending the message",
+            "Message is on it's way "
+        ],
+        "short": [
+            "cancelled sending"
+        ]
+    },
+    "sendingMessageToContact": {
+        "default": [
+            "Ok, Sending a {1} message to {0}",
+            "{1} message is on it's way to {0}"
+        ],
+        "short": [
+            "message sent to {0}"
+        ]
+    },
+	"telegramNote": {
+		"default": [
+			"Note: {0} won't see or hear any responces you make here, so no need to reply to me. "
+		]
+	},
+	"smsNote": {
+		"default": [
+			"Note: This SMS was sent via Alice, my voice assistant. I won't recieve any reply you make to this message. "
+		]
+	},
+    "sentMessageToXcontacts": {
+        "default": [
+            "I've just sent a message to {0} emergency contacts"
+        ],
+        "short": [
+            "{0} emergency contacts notified"
+        ]
+    },
+    "smsPotentiallySent": {
+        "default": [
+            "Text message appears to of been sent to {0}"
+        ],
+        "short": [
+            "{0} was sent the text"
+        ]
+    },
+    "systemConfigWarning1": {
+        "default": [
+            "You won't be able to send a SMS without filling in both sender details and recipient details"
+        ]
+    },
+    "systemConfigWarning2": {
+        "default": [
+            "Please check your settings. Sender details should have 3 entries you have {0} Format is FirstName/Email/"
+        ]
+    },
+    "systemConfigWarning3": {
+        "default": [
+            "Please check your settings. Sender details should have a legitimate email address. You entered {0} Format is FirstName/Email/emailPassword"
+        ]
+    },
+    "systemConfigWarning4": {
+        "default": [
+            "Please check your settings. recipientDetails should have 4 entries you entered {0} Format is FirstName/PhoneNumber/isEmergencyContact/smsGateway"
+        ]
+    },
+    "systemConfigWarning5": {
+        "default": [
+            "Please make sure your recipientPhoneNumber has 10 digits, the number you provided has {0}"
+        ]
+    },
+    "systemConfigWarning6": {
+        "default": [
+            "Expected yes or no but got {0} for SMS isEmergencyContact"
+        ]
+    },
+    "systemConfigWarning7": {
+        "default": [
+            "Please add valid gateway. example: @txt.att.net You provided {0}"
+        ]
+    },
+    "systemConfigWarning8": {
+        "default": [
+            "Please check your settings. Telegram configs should have 4 entries you provided {0} Format is yourFirstName/thierFirstName/theirChatID/isEmergencyContact"
+        ]
+    },
+    "systemConfigWarning9": {
+        "default": [
+            "Expected yes or no but got {0} for telegram's isEmergencyContact"
+        ]
+    },
+    "systemCouldntLocateSMSContact": {
+        "default": [
+            "Couldn't locate an SMS contact called {0} "
+        ]
+    },
+    "systemErrorNoSender": {
+        "default": [
+            "Please add a sender in the skill settings"
+        ]
+    },
+    "systemErrorSendingSMS": {
+        "default": [
+            "Error sending text: {0}"
+        ]
+    },
+    "systemErrorSendingTelegram": {
+        "default": [
+            "Error sending Telegram: {0}"
+        ]
+    },
+    "systemFinishedDatabaseUpdate": {
+        "default": [
+            "Finished updating SendToText database"
+        ]
+    },
+    "systemIssueUpdatingDatabase": {
+        "default": [
+            "Issue Inserting values: {0}"
+        ]
+    },
+    "systemMessageNoRecipientStored": {
+        "default": [
+            "Seems the database has no recipients stored. Add or fix recipients details"
+        ]
+    },
+    "systemSMSsent": {
+        "default": [
+            "Text message appears to of been sent to {0}"
+        ]
+    },
+    "systemSettingUpSmsDetails": {
+        "default": [
+            "Setting up the SMS details"
+        ]
+    },
+    "systemSetupSmsServer": {
+        "default": [
+            "Setting up SMS server settings"
+        ]
+    },
+    "systeminstallTelegram": {
+        "default": [
+            "Seems Telegram isn't installed. You need to restart alice to install it."
+        ]
+    },
+    "systemmanuallyInstallTelegram": {
+        "default": [
+            "Seems Telegram isn't installed. Please install it from the skill store, or fill in this skills 'telegramRecipientDetails' and then restart ALice"
+        ]
+    },
+    "whatMessageToSend": {
+        "default": [
+            "Sure, and what message do you want to send",
+            "What do you want the message to say ?"
+        ],
+        "short": [
+            "whats the message ?"
+        ]
+    }
 }

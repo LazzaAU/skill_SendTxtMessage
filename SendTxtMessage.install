@@ -1,24 +1,24 @@
 {
-    "name": "Telegram",
-    "version": "1.6.5",
-    "icon": "fab fa-telegram",
-    "category": "automation",
-    "author": "Psycho",
+    "name": "SendTxtMessage",
+    "version": "1.0.0",
+    "icon": "fab fa-phone",
+    "category": "assistance",
+    "author": "lazza",
     "maintainers": [
         "lazza"
     ],
-    "desc": "Chat with Alice directly from your mobile device with the `privacy first` app Telegram",
-    "aliceMinVersion": "1.0.0-rc1",
+    "desc": "Send a text message using ALice ",
+    "aliceMinVersion": "1.0.0-rc3",
     "systemRequirements": [],
-    "pipRequirements": [
-        "telepot==12.7"
-    ],
+    "pipRequirements": [],
     "conditions": {
         "lang": [
-            "en",
-            "fr"
+            "en"
         ],
         "online": true,
-        "asrArbitraryCapture": false
+        "asrArbitraryCapture": false,
+        "skill":[
+            "Telegram"
+            ]
     }
 }
