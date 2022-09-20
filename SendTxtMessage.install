@@ -8,7 +8,7 @@
         "lazza"
     ],
     "desc": "Send a text message using ALice ",
-    "aliceMinVersion": "1.0.0-rc3",
+    "aliceMinVersion": "1.0.0-b4",
     "systemRequirements": [],
     "pipRequirements": [],
     "conditions": {
@@ -16,9 +16,6 @@
             "en"
         ],
         "online": true,
-        "asrArbitraryCapture": false,
-        "skill":[
-            "Telegram"
-            ]
+        "asrArbitraryCapture": false
     }
 }

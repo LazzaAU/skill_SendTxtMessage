@@ -6,7 +6,7 @@ Send text messages using Alice
 
 - Author: lazza
 - Maintainers: 
-- Alice minimum Version: 1.0.0-rc3
+- Alice minimum Version: 1.0.0-b4
 - Languages:
     en
 
