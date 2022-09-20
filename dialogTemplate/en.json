@@ -88,11 +88,11 @@
 			"name": "SendTxt",
 			"enabledByDefault": true,
 			"utterances": [
-				"Send a {text:=>textMessage} message",
-				"send a {telegram:=>telegramMessage}",
-				"send a {telegram:=>telegramMessage} to {mary:=>Alice/Name}",
+				"Send a {telegram:=>telegramMessage} to {mary:=>Alice/Name}",
 				"send a {text:=>textMessage} to {Nancy:=>Alice/Name}",
-				"send a {susan:=>Alice/Name} a {telegram:=>telegramMessage}"
+				"send to {susan:=>Alice/Name} a {telegram:=>telegramMessage}",
+				"send to {mike:=>Aice/Name} a {text:=>textMessage} message",
+				"send to {Phillip:=>Alice/Name} a {telegram:=>telegramMessage} message"
 			],
 			"slots": [
 				{

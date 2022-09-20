@@ -96,3 +96,18 @@ asking for help on something entirely un related :)
 
 Enable this to run the skill in test mode. During test mode the skill will perform as normal BUT.. 
 it won't send any actual message. It will just display what would be sent in Alices syslog.
+
+### <u>SECURITY NOTE</u>
+My suggestion, once you have entered the "Sender details" field in and are happy with those details, that you click "confirm"
+then the next time you shut Alice down go to the SendTextMessage skill folder, open the config.json.template file and change 
+```commandline
+"smsSenderDetails": {
+		"defaultValue": "",
+		"dataType"    : "string",
+		"isSensitive" : true,
+```
+isSensitive to true ( from the default  of false).
+
+*Reason being* : Changing that value to "true" will make the field display ********** in the gui and therefore protecting your 
+email password from being viewable via the gui. Leaving it at true by default just makes it harder to see what your typing in there, 
+so for that reason I have left it at false until I come up with a alternative plan :)
