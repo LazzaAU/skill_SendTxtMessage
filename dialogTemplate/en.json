@@ -91,7 +91,7 @@
 				"Send a {telegram:=>telegramMessage} to {mary:=>Alice/Name}",
 				"send a {text:=>textMessage} to {Nancy:=>Alice/Name}",
 				"send to {susan:=>Alice/Name} a {telegram:=>telegramMessage}",
-				"send to {mike:=>Aice/Name} a {text:=>textMessage} message",
+				"send to {mike:=>Alice/Name} a {text:=>textMessage} message",
 				"send to {Phillip:=>Alice/Name} a {telegram:=>telegramMessage} message"
 			],
 			"slots": [
