@@ -1,0 +1,259 @@
+{
+    "askToSendEmergencyBroadcast": {
+        "default": [
+            "Voulez-vous envoyer une diffusion d'urgence ?",
+            "Dois-je envoyer une alerte d'urgence à vos contacts ?"
+        ],
+        "short": [
+            "envoyer une alerte ?"
+        ]
+    },
+    "cantLocateSMSContact": {
+        "default": [
+            "Impossible de localiser un contact SMS appelé {0}",
+            "Je n'ai trouvé aucun contact SMS appelé {0}"
+        ],
+        "short": [
+            "personne n'a appelé {0}"
+        ]
+    },
+    "couldntFindContact": {
+        "default": [
+            "Désolé mais je n'ai pas trouvé de contact Telegram appelé {0}",
+            "Vous ne semblez pas avoir de contact appelé {0}"
+        ],
+        "short": [
+            "personne n'a appelé {0}"
+        ]
+    },
+    "emergencyIfNoSenderName": {
+        "default": [
+            "Quelqu'un à {0} a demandé de l'aide, veuillez faire un suivi immédiatement"
+        ]
+    },
+    "emergencyIfSenderName": {
+        "default": [
+            "{0} a demandé de l'aide, veuillez donner suite immédiatement"
+        ]
+    },
+    "emergencyMessageSent": {
+        "default": [
+            "Je viens d'envoyer le message à {0}",
+            "{0} vient de recevoir un message d'urgence"
+        ],
+        "short": [
+            "{0} personnes envoyées"
+        ]
+    },
+    "failedToSendTelegram": {
+        "default": [
+            "Oops. Quelque chose s'est mal passé et ce message n'a pas été envoyé",
+            "hmmm, le message n'a pas pu être envoyé. Veuillez vérifier mes journaux"
+        ],
+        "short": [
+            "manqué"
+        ]
+    },
+    "fillInSenderDetails": {
+        "default": [
+            "Vous devez remplir les détails de l'expéditeur dans les paramètres de compétence. Abandon",
+            "J'ai besoin des détails de l'expéditeur pour pouvoir envoyer un message"
+        ],
+        "short": [
+            "ajouter les détails de l'expéditeur"
+        ]
+    },
+    "justSentEmergencyTelegram": {
+        "default": [
+            "Je viens d'envoyer un télégramme d'urgence à {0} contacts",
+            "{0} contacts de télégramme viennent de recevoir votre message"
+        ],
+        "short": [
+            "{0} personnes contactées"
+        ]
+    },
+    "noEmergencyContacts": {
+        "default": [
+            "Vous n'avez pas de contacts d'urgence et vous n'avez pas configuré les détails de l'expéditeur. Je ne peux pas aider davantage désolé"
+        ],
+        "short": [
+            ""
+        ]
+    },
+    "noRecipientNameSpecified": {
+        "default": [
+            "Échec, veuillez réessayer et dire un nom comme envoyer un télégramme à Mary",
+            "Je n'arrivais pas à comprendre le nom du contact. En avez-vous précisé un ?"
+        ],
+        "short": [
+            "aucun nom fourni"
+        ]
+    },
+    "noSMSContactFound": {
+        "default": [
+            "Veuillez réessayer mais dites le nom du destinataire. Exemple. envoyer un texto à Barry",
+            "Veuillez spécifier un contact SMS. Comme envoyer un texto à David. Je ne suis pas bon avec les surnoms pour utiliser un vrai nom"
+        ],
+        "short": [
+            "Nom du contact introuvable"
+        ]
+    },
+    "notSendingMessage": {
+        "default": [
+            "Ok je n'envoie pas le message",
+            "Le message est en route"
+        ],
+        "short": [
+            "envoi annulé"
+        ]
+    },
+    "sendingMessageToContact": {
+        "default": [
+            "OK, j'envoie un message {1} à {0}",
+            "{1} message est en route vers {0}"
+        ],
+        "short": [
+            "message envoyé à {0}"
+        ]
+    },
+    "telegramNote": {
+        "default": [
+            "Remarque : {0} ne verra ni n'entendra aucune de vos réponses ici, vous n'avez donc pas besoin de me répondre."
+        ]
+    },
+    "smsNote": {
+        "default": [
+            "Remarque : Ce SMS a été envoyé via Alice, mon assistant vocal. Je ne recevrai aucune réponse de votre part à ce message."
+        ]
+    },
+    "sentMessageToXcontacts": {
+        "default": [
+            "Je viens d'envoyer un message à {0} contacts d'urgence"
+        ],
+        "short": [
+            "{0} contacts d'urgence notifiés"
+        ]
+    },
+    "smsPotentiallySent": {
+        "default": [
+            "Le SMS semble avoir été envoyé à {0}"
+        ],
+        "short": [
+            "{0} a reçu le SMS"
+        ]
+    },
+    "systemConfigWarning1": {
+        "default": [
+            "Vous ne pourrez pas envoyer de SMS sans renseigner à la fois les coordonnées de l'expéditeur et celles du destinataire"
+        ]
+    },
+    "systemConfigWarning2": {
+        "default": [
+            "Veuillez vérifier vos paramètres. Les détails de l'expéditeur doivent avoir 3 entrées que vous avez {0} Le format est FirstName/Email/"
+        ]
+    },
+    "systemConfigWarning3": {
+        "default": [
+            "Veuillez vérifier vos paramètres. Les détails de l'expéditeur doivent avoir une adresse e-mail légitime. Vous avez entré {0} Le format est FirstName/Email/emailPassword"
+        ]
+    },
+    "systemConfigWarning4": {
+        "default": [
+            "Veuillez vérifier vos paramètres. recipientDetails doit avoir 4 entrées que vous avez saisies {0} Le format est FirstName/PhoneNumber/isEmergencyContact/smsGateway"
+        ]
+    },
+    "systemConfigWarning5": {
+        "default": [
+            "Veuillez vous assurer que votre recipientPhoneNumber a 10 chiffres, le numéro que vous avez fourni a {0}"
+        ]
+    },
+    "systemConfigWarning6": {
+        "default": [
+            "Attendu oui ou non mais j'ai reçu {0} pour le SMS isEmergencyContact"
+        ]
+    },
+    "systemConfigWarning7": {
+        "default": [
+            "Veuillez ajouter une passerelle valide. exemple : @txt.att.net Vous avez fourni {0}"
+        ]
+    },
+    "systemConfigWarning8": {
+        "default": [
+            "Veuillez vérifier vos paramètres. Les configurations de télégramme doivent avoir 4 entrées que vous avez fournies {0} Le format est yourFirstName/thierFirstName/theirChatID/isEmergencyContact"
+        ]
+    },
+    "systemConfigWarning9": {
+        "default": [
+            "Attendu oui ou non mais j'ai obtenu {0} pour isEmergencyContact du télégramme"
+        ]
+    },
+    "systemCouldntLocateSMSContact": {
+        "default": [
+            "Impossible de localiser un contact SMS appelé {0}"
+        ]
+    },
+    "systemErrorNoSender": {
+        "default": [
+            "Veuillez ajouter un expéditeur dans les paramètres de compétence"
+        ]
+    },
+    "systemErrorSendingSMS": {
+        "default": [
+            "Erreur lors de l'envoi du SMS : {0}"
+        ]
+    },
+    "systemErrorSendingTelegram": {
+        "default": [
+            "Erreur lors de l'envoi du télégramme : {0}"
+        ]
+    },
+    "systemFinishedDatabaseUpdate": {
+        "default": [
+            "Mise à jour de la base de données SendToText terminée"
+        ]
+    },
+    "systemIssueUpdatingDatabase": {
+        "default": [
+            "Problème lors de l'insertion des valeurs : {0}"
+        ]
+    },
+    "systemMessageNoRecipientStored": {
+        "default": [
+            "Il semble que la base de données n'ait pas de destinataires stockés. Ajouter ou corriger les détails des destinataires"
+        ]
+    },
+    "systemSMSsent": {
+        "default": [
+            "Le SMS semble avoir été envoyé à {0}"
+        ]
+    },
+    "systemSettingUpSmsDetails": {
+        "default": [
+            "Configuration des détails du SMS"
+        ]
+    },
+    "systemSetupSmsServer": {
+        "default": [
+            "Configuration des paramètres du serveur SMS"
+        ]
+    },
+    "systeminstallTelegram": {
+        "default": [
+            "Apparemment, Telegram n'est pas installé. Vous devez redémarrer alice pour l'installer."
+        ]
+    },
+    "systemmanuallyInstallTelegram": {
+        "default": [
+            "Apparemment, Telegram n'est pas installé. Veuillez l'installer à partir du magasin de compétences, ou remplissez ces compétences 'telegramRecipientDetails' puis redémarrez ALice"
+        ]
+    },
+    "whatMessageToSend": {
+        "default": [
+            "Bien sûr, et quel message voulez-vous envoyer ?",
+            "Que voulez-vous que le message dise ?"
+        ],
+        "short": [
+            "quel est le message ?"
+        ]
+    }
+}

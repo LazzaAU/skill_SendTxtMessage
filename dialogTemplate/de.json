@@ -1,0 +1,119 @@
+{
+    "skill": "SendTxtMessage",
+    "slotTypes": [
+        {
+            "name": "helpNeeded",
+            "matchingStrictness": null,
+            "automaticallyExtensible": true,
+            "useSynonyms": true,
+            "values": [
+                {
+                    "value": "Hilfe",
+                    "synonyms": []
+                },
+                {
+                    "value": "gefallen",
+                    "synonyms": []
+                },
+                {
+                    "value": "Ich brauche Hilfe",
+                    "synonyms": []
+                },
+                {
+                    "value": "Schmerz",
+                    "synonyms": []
+                }
+            ]
+        },
+        {
+            "name": "telegramMessage",
+            "matchingStrictness": null,
+            "automaticallyExtensible": true,
+            "useSynonyms": true,
+            "values": [
+                {
+                    "value": "Telegramm",
+                    "synonyms": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "textMessage",
+            "matchingStrictness": null,
+            "automaticallyExtensible": true,
+            "useSynonyms": true,
+            "values": [
+                {
+                    "value": "Text",
+                    "synonyms": [
+                        "s m s",
+                        "sms",
+                        "txt"
+                    ]
+                }
+            ]
+        }
+    ],
+    "intents": [
+        {
+            "name": "emergencyCall",
+            "enabledByDefault": true,
+            "utterances": [
+                "{ich brauche hilfe:=>helpNeeded}",
+                "{hilf:=>helpNeeded} mir, ich bin {gefallen:=>helpNeeded}",
+                "ich bin {verletzt:=>helpNeeded}",
+                "ich habe mich selbst {verletzt:=>helpNeeded}",
+                "Notfall {Hilfe:=>helpNeeded}",
+                "Rufen Sie meinen Notfallkontakt an",
+                "hol mir bitte jetzt hilfe",
+                "wirst du mir {helfen:=>helpNeeded}",
+                "bitte {helfen:=>helpNeeded} Sie mir",
+                "Können Sie mir bitte {helfen:=>helpNeeded}?",
+                "{Ich brauche jetzt Hilfe:=>helpNeeded}",
+                "Ich bin {gestürzt:=>helpNeeded} und brauche {Hilfe:=>helpNeeded}",
+                "bitte {hilf:=>helpNeeded} mir, ich bin {gestürzt:=>helpNeeded}"
+            ],
+            "slots": [
+                {
+                    "name": "helpNeeded",
+                    "required": false,
+                    "type": "helpNeeded",
+                    "missingQuestion": ""
+                }
+            ]
+        },
+        {
+            "name": "SendTxt",
+            "enabledByDefault": true,
+            "utterances": [
+                "Senden Sie ein {telegram:=>telegramMessage} an {mary:=>Alice/Name}",
+                "sende {SMS:=>textMessage} an {Nancy:=>Alice/Name}",
+                "sende an {susan:=>Alice/Name} ein {telegram:=>telegramMessage}",
+                "sende an {mike:=>Alice/Name} eine {Text:=>textMessage}-Nachricht",
+                "sende an {Phillip:=>Alice/Name} eine {telegram:=>telegramMessage}-Nachricht"
+            ],
+            "slots": [
+                {
+                    "name": "telegramMessage",
+                    "required": false,
+                    "type": "telegramMessage",
+                    "missingQuestion": ""
+                },
+                {
+                    "name": "textMessage",
+                    "required": false,
+                    "type": "textMessage",
+                    "missingQuestion": ""
+                },
+                {
+                    "name": "Alice/Name",
+                    "required": false,
+                    "type": "Alice/Name",
+                    "missingQuestion": ""
+                }
+            ]
+        }
+    ]
+}

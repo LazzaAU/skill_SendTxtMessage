@@ -1,0 +1,119 @@
+{
+    "skill": "SendTxtMessage",
+    "slotTypes": [
+        {
+            "name": "helpNeeded",
+            "matchingStrictness": null,
+            "automaticallyExtensible": true,
+            "useSynonyms": true,
+            "values": [
+                {
+                    "value": "ajuda",
+                    "synonyms": []
+                },
+                {
+                    "value": "caído",
+                    "synonyms": []
+                },
+                {
+                    "value": "eu preciso de ajuda",
+                    "synonyms": []
+                },
+                {
+                    "value": "ferir",
+                    "synonyms": []
+                }
+            ]
+        },
+        {
+            "name": "telegramMessage",
+            "matchingStrictness": null,
+            "automaticallyExtensible": true,
+            "useSynonyms": true,
+            "values": [
+                {
+                    "value": "telegrama",
+                    "synonyms": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "textMessage",
+            "matchingStrictness": null,
+            "automaticallyExtensible": true,
+            "useSynonyms": true,
+            "values": [
+                {
+                    "value": "texto",
+                    "synonyms": [
+                        "s m s",
+                        "sms",
+                        "txt"
+                    ]
+                }
+            ]
+        }
+    ],
+    "intents": [
+        {
+            "name": "emergencyCall",
+            "enabledByDefault": true,
+            "utterances": [
+                "{preciso de ajuda:=>helpNeeded}",
+                "{me ajude:=>helpNeeded}, eu {caí:=>helpNeeded}",
+                "estou {magoado:=>helpNeeded}",
+                "eu {me machuquei:=>helpNeeded}",
+                "emergência {ajuda:=>helpNeeded}",
+                "ligue para meu contato de emergência",
+                "me ajude agora por favor",
+                "você vai me {ajudar:=>helpNeeded}",
+                "por favor {me ajude:=>helpNeeded}",
+                "por favor, você pode me {ajudar:=>helpNeeded}?",
+                "{Preciso de ajuda:=>helpNeeded} agora",
+                "Eu {caí:=>helpNeeded} e preciso de {ajuda:=>helpNeeded}",
+                "por favor, {me ajude:=>helpNeeded} eu tenho {caído:=>helpNeeded}"
+            ],
+            "slots": [
+                {
+                    "name": "helpNeeded",
+                    "required": false,
+                    "type": "helpNeeded",
+                    "missingQuestion": ""
+                }
+            ]
+        },
+        {
+            "name": "SendTxt",
+            "enabledByDefault": true,
+            "utterances": [
+                "Envie um {telegram:=>telegramMessage} para {mary:=>Alice/Name}",
+                "envie um {texto:=>textMessage} para {Nancy:=>Alice/Name}",
+                "envie para {susan:=>Alice/Name} um {telegram:=>telegramMessage}",
+                "envie para {mike:=>Alice/Name} uma mensagem de {texto:=>textMessage}",
+                "envie para {Phillip:=>Alice/Name} uma mensagem de {telegram:=>telegramMessage}"
+            ],
+            "slots": [
+                {
+                    "name": "telegramMessage",
+                    "required": false,
+                    "type": "telegramMessage",
+                    "missingQuestion": ""
+                },
+                {
+                    "name": "textMessage",
+                    "required": false,
+                    "type": "textMessage",
+                    "missingQuestion": ""
+                },
+                {
+                    "name": "Alice/Name",
+                    "required": false,
+                    "type": "Alice/Name",
+                    "missingQuestion": ""
+                }
+            ]
+        }
+    ]
+}

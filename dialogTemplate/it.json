@@ -1,0 +1,119 @@
+{
+    "skill": "SendTxtMessage",
+    "slotTypes": [
+        {
+            "name": "helpNeeded",
+            "matchingStrictness": null,
+            "automaticallyExtensible": true,
+            "useSynonyms": true,
+            "values": [
+                {
+                    "value": "aiuto",
+                    "synonyms": []
+                },
+                {
+                    "value": "caduto",
+                    "synonyms": []
+                },
+                {
+                    "value": "Ho bisogno di aiuto",
+                    "synonyms": []
+                },
+                {
+                    "value": "male",
+                    "synonyms": []
+                }
+            ]
+        },
+        {
+            "name": "telegramMessage",
+            "matchingStrictness": null,
+            "automaticallyExtensible": true,
+            "useSynonyms": true,
+            "values": [
+                {
+                    "value": "telegramma",
+                    "synonyms": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "textMessage",
+            "matchingStrictness": null,
+            "automaticallyExtensible": true,
+            "useSynonyms": true,
+            "values": [
+                {
+                    "value": "testo",
+                    "synonyms": [
+                        "s m s",
+                        "sms",
+                        "txt"
+                    ]
+                }
+            ]
+        }
+    ],
+    "intents": [
+        {
+            "name": "emergencyCall",
+            "enabledByDefault": true,
+            "utterances": [
+                "{ho bisogno di aiuto:=>helpNeeded}",
+                "{aiutami:=>helpNeeded}, sono {caduto:=>helpNeeded}",
+                "sono {ferito:=>helpNeeded}",
+                "mi sono :=>helpNeeded} fatto male",
+                "emergenza {aiuto:=>helpNeeded}",
+                "chiamare il mio contatto di emergenza",
+                "aiutami ora per favore",
+                "mi {aiuterai:=>helpNeeded}?",
+                "per favore {aiutami:=>helpNeeded}",
+                "per favore puoi {aiutarmi:=>helpNeeded}?",
+                "{Ho bisogno di aiuto:=>helpNeeded} ora",
+                "Sono {caduto:=>helpNeeded} e ho bisogno di {aiuto:=>helpNeeded}",
+                "per favore {aiutami:=>helpNeeded} sono {caduto:=>helpNeeded}"
+            ],
+            "slots": [
+                {
+                    "name": "helpNeeded",
+                    "required": false,
+                    "type": "helpNeeded",
+                    "missingQuestion": ""
+                }
+            ]
+        },
+        {
+            "name": "SendTxt",
+            "enabledByDefault": true,
+            "utterances": [
+                "Invia un {telegramma:=>telegramMessage} a {mary:=>Alice/Name}",
+                "invia un {sms:=>textMessage} a {Nancy:=>Alice/Name}",
+                "invia a {susan:=>Alice/Name} un {telegramma:=>telegramMessage}",
+                "invia a {mike:=>Alice/Name} un messaggio di {text:=>textMessage}",
+                "invia a {Phillip:=>Alice/Name} un messaggio di {telegram:=>telegramMessage}"
+            ],
+            "slots": [
+                {
+                    "name": "telegramMessage",
+                    "required": false,
+                    "type": "telegramMessage",
+                    "missingQuestion": ""
+                },
+                {
+                    "name": "textMessage",
+                    "required": false,
+                    "type": "textMessage",
+                    "missingQuestion": ""
+                },
+                {
+                    "name": "Alice/Name",
+                    "required": false,
+                    "type": "Alice/Name",
+                    "missingQuestion": ""
+                }
+            ]
+        }
+    ]
+}

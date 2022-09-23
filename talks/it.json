@@ -1,0 +1,259 @@
+{
+    "askToSendEmergencyBroadcast": {
+        "default": [
+            "Vuoi inviare una trasmissione di emergenza?",
+            "Devo inviare un avviso di emergenza ai tuoi contatti?"
+        ],
+        "short": [
+            "inviare un avviso?"
+        ]
+    },
+    "cantLocateSMSContact": {
+        "default": [
+            "Impossibile individuare alcun contatto SMS chiamato {0}",
+            "Non sono riuscito a trovare nessun contatto SMS chiamato {0}"
+        ],
+        "short": [
+            "nessuno ha chiamato {0}"
+        ]
+    },
+    "couldntFindContact": {
+        "default": [
+            "Siamo spiacenti ma non sono riuscito a trovare un contatto Telegram chiamato {0}",
+            "Sembra che tu non abbia un contatto chiamato {0}"
+        ],
+        "short": [
+            "nessuno ha chiamato {0}"
+        ]
+    },
+    "emergencyIfNoSenderName": {
+        "default": [
+            "Qualcuno in {0} ha richiesto assistenza, ti preghiamo di contattarci immediatamente"
+        ]
+    },
+    "emergencyIfSenderName": {
+        "default": [
+            "{0} ha richiesto assistenza, contatta immediatamente"
+        ]
+    },
+    "emergencyMessageSent": {
+        "default": [
+            "Ho appena inviato il messaggio a {0}",
+            "{0} è appena stato inviato un messaggio di emergenza"
+        ],
+        "short": [
+            "{0} persone inviate"
+        ]
+    },
+    "failedToSendTelegram": {
+        "default": [
+            "Ops. Qualcosa è andato storto e il messaggio non è stato inviato",
+            "mmm, il messaggio non è stato inviato. Si prega di controllare i miei registri"
+        ],
+        "short": [
+            "fallito"
+        ]
+    },
+    "fillInSenderDetails": {
+        "default": [
+            "Devi inserire i dettagli del mittente nelle impostazioni delle abilità. Aborto",
+            "Ho bisogno dei dettagli del mittente per poter inviare un messaggio"
+        ],
+        "short": [
+            "aggiungi i dettagli del mittente"
+        ]
+    },
+    "justSentEmergencyTelegram": {
+        "default": [
+            "Ho appena inviato un messaggio di telegramma di emergenza a {0} contatti",
+            "{0} contatti di Telegram hanno appena ricevuto il tuo messaggio"
+        ],
+        "short": [
+            "{0} persone contattate"
+        ]
+    },
+    "noEmergencyContacts": {
+        "default": [
+            "Non hai contatti di emergenza e non hai impostato i dettagli del mittente. Non sono in grado di aiutare ulteriormente, mi dispiace"
+        ],
+        "short": [
+            ""
+        ]
+    },
+    "noRecipientNameSpecified": {
+        "default": [
+            "Fallito, riprova e pronuncia un nome come, invia un telegramma a Mary",
+            "Non riuscivo a dare un senso al nome dei contatti. Ne hai specificato uno?"
+        ],
+        "short": [
+            "nessun nome fornito"
+        ]
+    },
+    "noSMSContactFound": {
+        "default": [
+            "Riprova ma pronuncia il nome del destinatario. esempio. invia un SMS a Barry",
+            "Specificare un contatto SMS. Come inviare un messaggio a David. Non sono bravo con i soprannomi per usare un nome vero"
+        ],
+        "short": [
+            "Nome contatto non trovato"
+        ]
+    },
+    "notSendingMessage": {
+        "default": [
+            "Ok non inviare il messaggio",
+            "Il messaggio è in arrivo"
+        ],
+        "short": [
+            "invio annullato"
+        ]
+    },
+    "sendingMessageToContact": {
+        "default": [
+            "Ok, sto inviando un messaggio {1} a {0}",
+            "{1} il messaggio sta arrivando a {0}"
+        ],
+        "short": [
+            "messaggio inviato a {0}"
+        ]
+    },
+    "telegramNote": {
+        "default": [
+            "Nota: {0} non vedrà né ascolterà le risposte che rispondi qui, quindi non c'è bisogno di rispondermi."
+        ]
+    },
+    "smsNote": {
+        "default": [
+            "Nota: questo SMS è stato inviato tramite Alice, il mio assistente vocale. Non riceverò alcuna risposta che farai a questo messaggio."
+        ]
+    },
+    "sentMessageToXcontacts": {
+        "default": [
+            "Ho appena inviato un messaggio a {0} contatti di emergenza"
+        ],
+        "short": [
+            "{0} contatti di emergenza notificati"
+        ]
+    },
+    "smsPotentiallySent": {
+        "default": [
+            "Il messaggio di testo sembra essere stato inviato a {0}"
+        ],
+        "short": [
+            "{0} è stato inviato il testo"
+        ]
+    },
+    "systemConfigWarning1": {
+        "default": [
+            "Non potrai inviare un SMS senza aver inserito sia i dettagli del mittente che quelli del destinatario"
+        ]
+    },
+    "systemConfigWarning2": {
+        "default": [
+            "Si prega di controllare le impostazioni. I dettagli del mittente dovrebbero avere 3 voci che hai {0} Il formato è Nome/Email/"
+        ]
+    },
+    "systemConfigWarning3": {
+        "default": [
+            "Si prega di controllare le impostazioni. I dettagli del mittente dovrebbero avere un indirizzo email legittimo. Hai inserito {0} Il formato è Nome/E-mail/Password e-mail"
+        ]
+    },
+    "systemConfigWarning4": {
+        "default": [
+            "Si prega di controllare le impostazioni. recipientDetails dovrebbe avere 4 voci che hai inserito {0} Il formato è FirstName/PhoneNumber/isEmergencyContact/smsGateway"
+        ]
+    },
+    "systemConfigWarning5": {
+        "default": [
+            "Assicurati che il tuo numero di telefono del destinatario abbia 10 cifre, il numero che hai fornito abbia {0}"
+        ]
+    },
+    "systemConfigWarning6": {
+        "default": [
+            "Previsto sì o no, ma ho ricevuto {0} per SMS isEmergencyContact"
+        ]
+    },
+    "systemConfigWarning7": {
+        "default": [
+            "Si prega di aggiungere un gateway valido. esempio: @txt.att.net Hai fornito {0}"
+        ]
+    },
+    "systemConfigWarning8": {
+        "default": [
+            "Si prega di controllare le impostazioni. Le configurazioni di Telegram dovrebbero avere 4 voci che hai fornito {0} Format is yourFirstName/thierFirstName/theirChatID/isEmergencyContact"
+        ]
+    },
+    "systemConfigWarning9": {
+        "default": [
+            "Previsto sì o no ma ottenuto {0} per isEmergencyContact di telegram"
+        ]
+    },
+    "systemCouldntLocateSMSContact": {
+        "default": [
+            "Impossibile individuare un contatto SMS chiamato {0}"
+        ]
+    },
+    "systemErrorNoSender": {
+        "default": [
+            "Aggiungi un mittente nelle impostazioni delle abilità"
+        ]
+    },
+    "systemErrorSendingSMS": {
+        "default": [
+            "Errore durante l'invio del testo: {0}"
+        ]
+    },
+    "systemErrorSendingTelegram": {
+        "default": [
+            "Errore durante l'invio del telegramma: {0}"
+        ]
+    },
+    "systemFinishedDatabaseUpdate": {
+        "default": [
+            "Completato l'aggiornamento del database SendToText"
+        ]
+    },
+    "systemIssueUpdatingDatabase": {
+        "default": [
+            "Problema Inserimento di valori: {0}"
+        ]
+    },
+    "systemMessageNoRecipientStored": {
+        "default": [
+            "Sembra che il database non abbia destinatari memorizzati. Aggiungi o correggi i dettagli dei destinatari"
+        ]
+    },
+    "systemSMSsent": {
+        "default": [
+            "Il messaggio di testo sembra essere stato inviato a {0}"
+        ]
+    },
+    "systemSettingUpSmsDetails": {
+        "default": [
+            "Impostazione dei dettagli dell'SMS"
+        ]
+    },
+    "systemSetupSmsServer": {
+        "default": [
+            "Configurazione delle impostazioni del server SMS"
+        ]
+    },
+    "systeminstallTelegram": {
+        "default": [
+            "Sembra che Telegram non sia installato. Devi riavviare Alice per installarlo."
+        ]
+    },
+    "systemmanuallyInstallTelegram": {
+        "default": [
+            "Sembra che Telegram non sia installato. Installalo dall'archivio delle abilità o compila questa abilità \"telegramRecipientDetails\" e quindi riavvia ALice"
+        ]
+    },
+    "whatMessageToSend": {
+        "default": [
+            "Certo, e che messaggio vuoi inviare",
+            "Cosa vuoi che dica il messaggio?"
+        ],
+        "short": [
+            "qual è il messaggio?"
+        ]
+    }
+}

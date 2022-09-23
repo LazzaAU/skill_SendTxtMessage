@@ -1,0 +1,119 @@
+{
+    "skill": "SendTxtMessage",
+    "slotTypes": [
+        {
+            "name": "helpNeeded",
+            "matchingStrictness": null,
+            "automaticallyExtensible": true,
+            "useSynonyms": true,
+            "values": [
+                {
+                    "value": "aider",
+                    "synonyms": []
+                },
+                {
+                    "value": "déchu",
+                    "synonyms": []
+                },
+                {
+                    "value": "j'ai besoin d'aide",
+                    "synonyms": []
+                },
+                {
+                    "value": "blesser",
+                    "synonyms": []
+                }
+            ]
+        },
+        {
+            "name": "telegramMessage",
+            "matchingStrictness": null,
+            "automaticallyExtensible": true,
+            "useSynonyms": true,
+            "values": [
+                {
+                    "value": "télégramme",
+                    "synonyms": [
+                        ""
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "textMessage",
+            "matchingStrictness": null,
+            "automaticallyExtensible": true,
+            "useSynonyms": true,
+            "values": [
+                {
+                    "value": "texte",
+                    "synonyms": [
+                        "s m s",
+                        "sms",
+                        "txt"
+                    ]
+                }
+            ]
+        }
+    ],
+    "intents": [
+        {
+            "name": "emergencyCall",
+            "enabledByDefault": true,
+            "utterances": [
+                "{j'ai besoin d'aide:=>helpNeeded}",
+                "{aidez:=>helpNeeded} moi, je suis {tombé:=>helpNeeded}",
+                "je suis {blessé:=>helpNeeded}",
+                "je me suis :=>helpNeeded} blessé",
+                "urgence {aide:=>helpNeeded}",
+                "appeler mon contact d'urgence",
+                "aidez-moi maintenant s'il vous plaît",
+                "veux-tu m':=>helpNeeded} aider",
+                "s'il vous plaît :=>helpNeeded} m'aider",
+                "s'il vous plaît pouvez-vous {m'aider:=>helpNeeded} ?",
+                "{J'ai besoin d'aide:=>helpNeeded} maintenant",
+                "Je suis {tombé:=>helpNeeded} et j'ai besoin d'{aide:=>helpNeeded}",
+                "s'il vous plaît {aidez:=>helpNeeded} moi je suis {tombé:=>helpNeeded}"
+            ],
+            "slots": [
+                {
+                    "name": "helpNeeded",
+                    "required": false,
+                    "type": "helpNeeded",
+                    "missingQuestion": ""
+                }
+            ]
+        },
+        {
+            "name": "SendTxt",
+            "enabledByDefault": true,
+            "utterances": [
+                "Envoyez un {télégramme:=>telegramMessage} à {marie:=>Alice/Name}",
+                "envoyer un {texte:=>textMessage} à {Nancy:=>Alice/Name}",
+                "envoyer à {susan:=>Alice/Name} un {télégramme:=>telegramMessage}",
+                "envoyer à {mike:=>Alice/Name} un message {texte:=>textMessage}",
+                "envoyer à {Philip:=>Alice/Name} un message {télégramme:=>telegramMessage}"
+            ],
+            "slots": [
+                {
+                    "name": "telegramMessage",
+                    "required": false,
+                    "type": "telegramMessage",
+                    "missingQuestion": ""
+                },
+                {
+                    "name": "textMessage",
+                    "required": false,
+                    "type": "textMessage",
+                    "missingQuestion": ""
+                },
+                {
+                    "name": "Alice/Name",
+                    "required": false,
+                    "type": "Alice/Name",
+                    "missingQuestion": ""
+                }
+            ]
+        }
+    ]
+}

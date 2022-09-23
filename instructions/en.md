@@ -31,7 +31,7 @@ due to a user not having a Telegram account.
 
 In the skill setting:
 
-### <u>*For SMS feature*</u>
+### *For SMS feature*
 
 Enter into the "SMS Sender Details field - Your details as the sender... format= FirstName/email/emailPassword"
 - Example:
@@ -47,7 +47,7 @@ Again, add as many as you like but comma seperated.
 
 NOTE: This has only been tested with gmail so far. to set a gmail app pawword go to [Setup Google App Password](https://support.google.com/accounts/answer/185833?hl=en)
 
-#### <u>*Let's break down these*</u>
+#### *Let's break down these*
 
 format: FirstName/PhoneNumber/isEmergencyContact/smsGateway
 
@@ -68,7 +68,7 @@ mobile carrier is and then look up what the sms gateway for that carrier is. A l
 The Gateway you enter must have the @ at the start of it such as @vtext.com
 
 
-### <u>*For Telegram Feature*</u>
+### *For Telegram Feature*
 
 For the Telegram Recipient Details field - YourFirstName/TheirFirsName/TheirChatId/isEmergencyContact 
 - Example: larry/Mary/12345/yes
@@ -76,7 +76,7 @@ For the Telegram Recipient Details field - YourFirstName/TheirFirsName/TheirChat
 This follows the same principle as SMS recipient, use yes or no for isEmergencyContact and the contacts 
 telegramId for the "theirChatId" 
 
-#### <u>*Alice location Id*</u>
+#### *Alice location Id*
 
 Enter an identifiable location that Alice lives at, for the purpose that other people can understand when a emergency message is sent
 and Alice doesn't recognised who has yelled out the request, this location name will be used for helping
@@ -86,18 +86,18 @@ Example: - "Hi emergency contact, someone at "mike Pratts house" has fallen and 
 
 Where "mike Pratts house" could be "bobs farm", "susans Caravan" ""jacks place on Bourbon Street" etc.
 
-#### <u>*Confirm Emergency call*</u>
+#### *Confirm Emergency call*
 
 Enable this to be prompted if you want to send a help message before sending it. 
 Disabling this may send help messages to you emergency contacts if Alice missunderstands you one day 
 asking for help on something entirely un related :)
 
-#### <u>x Test Mode</u>
+#### x Test Mode
 
 Enable this to run the skill in test mode. During test mode the skill will perform as normal BUT.. 
 it won't send any actual message. It will just display what would be sent in Alices syslog.
 
-### <u>SECURITY NOTE</u>
+### SECURITY NOTE
 My suggestion, once you have entered the "Sender details" field in and are happy with those details, that you click "confirm"
 then the next time you shut Alice down go to the SendTextMessage skill folder, open the config.json.template file and change 
 ```commandline

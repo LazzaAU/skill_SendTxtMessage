@@ -13,7 +13,12 @@
     "pipRequirements": [],
     "conditions": {
         "lang": [
-            "en"
+            "en",
+            "de",
+            "it",
+            "fr",
+            "pl",
+            "pt"
         ],
         "online": true,
         "asrArbitraryCapture": false

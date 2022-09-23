@@ -1,0 +1,259 @@
+{
+    "askToSendEmergencyBroadcast": {
+        "default": [
+            "Czy chcesz wysłać transmisję alarmową?",
+            "Czy mam wysłać alert alarmowy do Twoich kontaktów?"
+        ],
+        "short": [
+            "wysłać alert ?"
+        ]
+    },
+    "cantLocateSMSContact": {
+        "default": [
+            "Nie można znaleźć żadnego kontaktu SMS o nazwie {0}",
+            "Nie udało mi się znaleźć żadnego kontaktu SMS o nazwie {0}"
+        ],
+        "short": [
+            "nikt nie zadzwonił {0}"
+        ]
+    },
+    "couldntFindContact": {
+        "default": [
+            "Przepraszamy, ale nie udało się znaleźć kontaktu telegramu o nazwie {0}",
+            "Wygląda na to, że nie masz kontaktu o nazwie {0}"
+        ],
+        "short": [
+            "nikt nie zadzwonił {0}"
+        ]
+    },
+    "emergencyIfNoSenderName": {
+        "default": [
+            "Ktoś w {0} poprosił o pomoc, prosimy o natychmiastowe skontaktowanie się"
+        ]
+    },
+    "emergencyIfSenderName": {
+        "default": [
+            "{0} poprosił o pomoc, prosimy o natychmiastowy kontakt"
+        ]
+    },
+    "emergencyMessageSent": {
+        "default": [
+            "Właśnie wysłałem wiadomość do {0}",
+            "{0} właśnie wysłano wiadomość alarmową"
+        ],
+        "short": [
+            "Wysłano {0} osób"
+        ]
+    },
+    "failedToSendTelegram": {
+        "default": [
+            "Ups. Coś poszło nie tak i ta wiadomość nie została wysłana",
+            "hmmm, wiadomość nie została wysłana. Proszę sprawdzić moje dzienniki"
+        ],
+        "short": [
+            "przegrany"
+        ]
+    },
+    "fillInSenderDetails": {
+        "default": [
+            "Musisz wypełnić dane nadawcy w ustawieniach umiejętności. Przerywanie",
+            "Wymagam podania danych nadawcy, aby móc wysłać wiadomość"
+        ],
+        "short": [
+            "dodaj dane nadawcy"
+        ]
+    },
+    "justSentEmergencyTelegram": {
+        "default": [
+            "Właśnie wysłałem alarmową wiadomość telegramową do {0} kontaktów",
+            "{0} kontakty telegramowe właśnie otrzymały Twoją wiadomość"
+        ],
+        "short": [
+            "Skontaktowano się z {0} osobami"
+        ]
+    },
+    "noEmergencyContacts": {
+        "default": [
+            "Nie masz kontaktów alarmowych i nie masz skonfigurowanych danych nadawcy. Nie mogę dalej pomagać, przepraszam"
+        ],
+        "short": [
+            ""
+        ]
+    },
+    "noRecipientNameSpecified": {
+        "default": [
+            "Nie powiodło się, spróbuj ponownie i powiedz imię, np. wyślij telegram do Marii",
+            "Nie mogłem zrozumieć nazwy kontaktów. Czy określiłeś jeden?"
+        ],
+        "short": [
+            "nie podano nazwy"
+        ]
+    },
+    "noSMSContactFound": {
+        "default": [
+            "Spróbuj ponownie, ale powiedz nazwę odbiorcy. przykład. wyślij SMS-a do Barry",
+            "Podaj kontakt SMS. Jak wysłać SMS-a do Davida. Nie radzę sobie z pseudonimami, aby używać prawdziwego imienia"
+        ],
+        "short": [
+            "Nie znaleziono nazwy kontaktu"
+        ]
+    },
+    "notSendingMessage": {
+        "default": [
+            "Ok, nie wysyłam wiadomości",
+            "Wiadomość jest w drodze"
+        ],
+        "short": [
+            "anulowane wysyłanie"
+        ]
+    },
+    "sendingMessageToContact": {
+        "default": [
+            "OK, wysyłam wiadomość {1} do {0}",
+            "Wiadomość {1} jest w drodze do {0}"
+        ],
+        "short": [
+            "wiadomość wysłana do {0}"
+        ]
+    },
+    "telegramNote": {
+        "default": [
+            "Uwaga: {0} nie zobaczy ani nie usłyszy żadnych odpowiedzi, które tu udzielisz, więc nie musisz mi odpowiadać."
+        ]
+    },
+    "smsNote": {
+        "default": [
+            "Uwaga: ten SMS został wysłany przez Alice, moją asystentkę głosową. Nie otrzymam żadnej odpowiedzi na tę wiadomość."
+        ]
+    },
+    "sentMessageToXcontacts": {
+        "default": [
+            "Właśnie wysłałem wiadomość do {0} kontaktów alarmowych"
+        ],
+        "short": [
+            "Powiadomiono {0} kontakty alarmowe"
+        ]
+    },
+    "smsPotentiallySent": {
+        "default": [
+            "Wiadomość tekstowa wygląda na wysłaną do {0}"
+        ],
+        "short": [
+            "{0} wysłano SMS-a"
+        ]
+    },
+    "systemConfigWarning1": {
+        "default": [
+            "Nie będziesz w stanie wysłać SMS-a bez wypełnienia zarówno danych nadawcy, jak i danych odbiorcy"
+        ]
+    },
+    "systemConfigWarning2": {
+        "default": [
+            "Sprawdź swoje ustawienia. Dane nadawcy powinny zawierać 3 wpisy, które masz {0} Format to Imię/E-mail/"
+        ]
+    },
+    "systemConfigWarning3": {
+        "default": [
+            "Sprawdź swoje ustawienia. Dane nadawcy powinny mieć prawidłowy adres e-mail. Wpisałeś {0} Format to imię/e-mail/hasło e-mail"
+        ]
+    },
+    "systemConfigWarning4": {
+        "default": [
+            "Sprawdź swoje ustawienia. Szczegóły odbiorcy powinny zawierać 4 wpisane wpisy {0} Format to Imię/Numer Telefonu/Kontakt w nagłych wypadkach/SmsGateway"
+        ]
+    },
+    "systemConfigWarning5": {
+        "default": [
+            "Upewnij się, że numer telefonu odbiorcy składa się z 10 cyfr, a podany numer ma {0}"
+        ]
+    },
+    "systemConfigWarning6": {
+        "default": [
+            "Oczekiwano tak lub nie, ale otrzymałem {0} za SMS isEmergencyContact"
+        ]
+    },
+    "systemConfigWarning7": {
+        "default": [
+            "Dodaj prawidłową bramę. przykład: @txt.att.net Podałeś {0}"
+        ]
+    },
+    "systemConfigWarning8": {
+        "default": [
+            "Sprawdź swoje ustawienia. Konfiguracje telegramu powinny zawierać 4 podane przez Ciebie wpisy {0} Format to twojeImię/TierImię/IdentyfikatorChat/isEmergencyContact"
+        ]
+    },
+    "systemConfigWarning9": {
+        "default": [
+            "Oczekiwano tak lub nie, ale otrzymałem {0} dla telegramu isEmergencyContact"
+        ]
+    },
+    "systemCouldntLocateSMSContact": {
+        "default": [
+            "Nie można znaleźć kontaktu SMS o nazwie {0}"
+        ]
+    },
+    "systemErrorNoSender": {
+        "default": [
+            "Dodaj nadawcę w ustawieniach umiejętności"
+        ]
+    },
+    "systemErrorSendingSMS": {
+        "default": [
+            "Błąd podczas wysyłania tekstu: {0}"
+        ]
+    },
+    "systemErrorSendingTelegram": {
+        "default": [
+            "Błąd podczas wysyłania telegramu: {0}"
+        ]
+    },
+    "systemFinishedDatabaseUpdate": {
+        "default": [
+            "Ukończono aktualizację bazy danych SendToText"
+        ]
+    },
+    "systemIssueUpdatingDatabase": {
+        "default": [
+            "Problem Wstawianie wartości: {0}"
+        ]
+    },
+    "systemMessageNoRecipientStored": {
+        "default": [
+            "Wygląda na to, że w bazie danych nie ma zapisanych odbiorców. Dodaj lub popraw dane odbiorców"
+        ]
+    },
+    "systemSMSsent": {
+        "default": [
+            "Wiadomość tekstowa wygląda na wysłaną do {0}"
+        ]
+    },
+    "systemSettingUpSmsDetails": {
+        "default": [
+            "Konfigurowanie szczegółów SMS"
+        ]
+    },
+    "systemSetupSmsServer": {
+        "default": [
+            "Konfiguracja ustawień serwera SMS"
+        ]
+    },
+    "systeminstallTelegram": {
+        "default": [
+            "Wygląda na to, że Telegram nie jest zainstalowany. Aby go zainstalować, musisz ponownie uruchomić alice."
+        ]
+    },
+    "systemmanuallyInstallTelegram": {
+        "default": [
+            "Wygląda na to, że Telegram nie jest zainstalowany. Zainstaluj go ze sklepu umiejętności lub wypełnij te umiejętności „telegramRecipientDetails”, a następnie uruchom ponownie ALice"
+        ]
+    },
+    "whatMessageToSend": {
+        "default": [
+            "Jasne, a jaką wiadomość chcesz wysłać",
+            "Co chcesz przekazać w wiadomości?"
+        ],
+        "short": [
+            "jaka jest wiadomość?"
+        ]
+    }
+}
