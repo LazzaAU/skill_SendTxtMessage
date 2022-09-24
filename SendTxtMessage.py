@@ -5,7 +5,6 @@ from core.dialog.model.DialogSession import DialogSession
 from core.util.Decorators import IntentHandler
 from core.base.model.Intent import Intent
 from pathlib import Path
-#from skills.AliceDevTools import AliceDevTools
 
 class SendTxtMessage(AliceSkill):
 	"""
@@ -61,8 +60,6 @@ class SendTxtMessage(AliceSkill):
 		self._telegramContacts = False
 		self._dbTrigger = False
 
-		# AliceDev, used for internal use
-		#self.AliceDev = AliceDevTools.AliceDevTools()
 		super().__init__(self._INTENTS, databaseSchema=self._DATABASE)
 
 	def onStart(self):
@@ -533,10 +530,10 @@ class SendTxtMessage(AliceSkill):
 		:param table: The table to retrieve from
 		:return:
 		"""
-		Contacts = list()
+		contacts = list()
 		for row in self.databaseFetch(tableName=table, query='SELECT * FROM :__table__ '):
-			Contacts.append(row)
-		return Contacts
+			contacts.append(row)
+		return contacts
 
 	def deleteTable(self, tableName: str):
 		"""
@@ -701,15 +698,4 @@ class SendTxtMessage(AliceSkill):
 				port = 587
 
 			return email, pwd, port
-
-
-	"""
-	TO DO LIST
-	
-	Improve database commands.
-	1. Don't delete entire table just to update it
-	2. Add noteSent to table
-	3. locate a specific person rather than sift through entire database
-	"""
-
 
