@@ -549,7 +549,7 @@ class SendTxtMessage(AliceSkill):
 
 
 ### - ### - ### PROCESS CONFIG DETAILS ### - ### - ###
-	def updateDatabaseDetails(self, _):
+	def updateDatabaseDetails(self, _): # NOSONAR
 		"""
 		Triggered by clicking confirm button after making changes in the skill settings
 		Give the config file time to update then run through the database update procedure
