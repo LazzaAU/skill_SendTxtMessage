@@ -249,7 +249,6 @@ class SendTxtMessage(AliceSkill):
 
 		outgoingSMTP = email.split('@')[1]
 		recipientList = self.fetchDbContacts(table=self._SMSRECIPIENT)
-		tempList = list()
 		numberOfEmergencyContacts = int
 		name = ""
 
@@ -259,11 +258,7 @@ class SendTxtMessage(AliceSkill):
 			name = str(session.customData['name']).capitalize()
 
 		if isEmergency:
-			for contact in recipientList:
-				if "yes" in contact['isEmergencyContact']:
-					tempList.append(contact)
-			recipientList = tempList
-			numberOfEmergencyContacts = len(recipientList)
+			recipientList, numberOfEmergencyContacts = self.returnModifiedRecipientList(recipientList=recipientList)
 
 		# If there's no SMS recipients then stop
 		if not recipientList:
@@ -323,6 +318,22 @@ class SendTxtMessage(AliceSkill):
 			text=self.randomTalk(text="noSMSContactFound"),
 			deviceUid=session.deviceUid
 		)
+
+	@staticmethod
+	def returnModifiedRecipientList(recipientList: list):
+		"""
+		This method is purely to shut Sonar complexity issue up but does return the new recipientList and
+		The number of emergency contacts
+		:param recipientList:
+		:return:
+		"""
+		tempList = list()
+		for contact in recipientList:
+			if "yes" in contact['isEmergencyContact']:
+				tempList.append(contact)
+		recipientList = tempList
+		numberOfEmergencyContacts = len(recipientList)
+		return recipientList, numberOfEmergencyContacts
 
 	def sendTelegram(self, recipientName: str, message: str, noteSent = 0, chatID: str = None):
 		"""
@@ -582,6 +593,12 @@ class SendTxtMessage(AliceSkill):
 			self.seperateStringValues(value=self.getConfig('telegramRecipientDetails'), caller='telegramRecipientDetails')
 
 	def errorCheckForPeopleThatDontRead(self, data, caller) -> bool:
+		"""
+		Do some error checking on the users config data. See if they follow instructions or not
+		:param data: The config data being analyzed
+		:param caller: What function called the check
+		:return: Error boolean
+		"""
 		error = False
 		if not self.getConfig('smsSenderDetails') and self.getConfig('smsRecipientDetails') or not self.getConfig('smsRecipientDetails') and self.getConfig('smsSenderDetails'):
 			self.logWarning(self.randomTalk(text="systemConfigWarning1"))
@@ -612,14 +629,24 @@ class SendTxtMessage(AliceSkill):
 				error = True
 			return error
 		if 'telegramRecipientDetails' in caller:
-			if not len(data.split('/')) == 4 :
-				self.logWarning(self.randomTalk(text="systemConfigWarning8", replace=[len(data.split('/'))]))
-				self.logInfo(f"Example : Mike/lisa/123456/no")
-				error = True
-			if not 'yes' in data.split('/')[3] and not 'no' in data.split('/')[3]:
-				self.logWarning(self.randomTalk(text="systemConfigWarning9", replace=[data.split('/')[3]]))
-				error = True
+			error = self.telegramConfigCheck(data=data)
 			return error
+	def telegramConfigCheck(self, data):
+		"""
+		Method seperated from above to reduce sonar complexity. This method error checks the
+		users telegram configuration
+		:param data: The config data being analyzed
+		:return: error boolean
+		"""
+		error = False
+		if not len(data.split('/')) == 4 :
+			self.logWarning(self.randomTalk(text="systemConfigWarning8", replace=[len(data.split('/'))]))
+			self.logInfo(f"Example : Mike/lisa/123456/no")
+			error = True
+		if not 'yes' in data.split('/')[3] and not 'no' in data.split('/')[3]:
+			self.logWarning(self.randomTalk(text="systemConfigWarning9", replace=[data.split('/')[3]]))
+			error = True
+		return error
 
 	def seperateStringValues(self, value : str, caller : str):
 		"""
