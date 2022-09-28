@@ -56,7 +56,7 @@
                 {
                     "value": "text",
                     "synonyms": [
-                        "S M S",
+                        "SMS",
                         "SMS",
                         "txt",
                         "Text"
@@ -82,7 +82,7 @@
                 "Können Sie mir bitte {helfen:=>helpNeeded}?",
                 "{Ich brauche jetzt Hilfe:=>helpNeeded}",
                 "Ich bin {gestürzt:=>helpNeeded} und brauche {Hilfe:=>helpNeeded}",
-                "bitte {hilf:=>helpNeeded} mir, ich bin {gestürzt:=>helpNeeded}"
+                "bitte {helfen:=>helpNeeded} Sie mir, ich bin {gefallen:=>helpNeeded}"
             ],
             "slots": [
                 {

@@ -9,19 +9,27 @@
             "values": [
                 {
                     "value": "help",
-                    "synonyms": []
+                    "synonyms": [
+                        "aider"
+                    ]
                 },
                 {
                     "value": "fallen",
-                    "synonyms": []
+                    "synonyms": [
+                        "déchu"
+                    ]
                 },
                 {
                     "value": "i need help",
-                    "synonyms": []
+                    "synonyms": [
+                        "j'ai besoin d'aide"
+                    ]
                 },
                 {
                     "value": "hurt",
-                    "synonyms": []
+                    "synonyms": [
+                        "blesser"
+                    ]
                 }
             ]
         },
@@ -33,7 +41,9 @@
             "values": [
                 {
                     "value": "telegram",
-                    "synonyms": []
+                    "synonyms": [
+                        "télégramme"
+                    ]
                 }
             ]
         },
@@ -46,9 +56,10 @@
                 {
                     "value": "text",
                     "synonyms": [
-                        "S M S",
-                        "sms",
-                        "txt"
+                        "SMS",
+                        "SMS",
+                        "SMS",
+                        "texte"
                     ]
                 }
             ]
